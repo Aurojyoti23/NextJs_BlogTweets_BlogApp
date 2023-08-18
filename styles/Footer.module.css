@@ -1,0 +1,38 @@
+.footer{
+    border-top: 2px solid;
+    width: 90%;
+    padding: 80px 60px;
+}
+
+.footer
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer
+.container
+.copyright{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer
+.container
+.copyright svg{
+    height: 15px;
+}
+.footer
+.container
+.sociallinks a{
+    margin: 0 10px;
+}
+.footer
+.container
+.sociallinks
+a svg{
+    height: 25px;
+}

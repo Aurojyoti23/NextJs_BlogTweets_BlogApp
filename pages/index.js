@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import images from '@/public/blogimgs/images'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,100 +15,73 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      <main className={`${inter.className}`}>
+
+        <div className={styles.home}>
+          <div className={styles.hero}>
+            <h4>Welcome to Blog Tweets, Explore Blog section for Different Categories like Programing, Science, Technology, Psychology and many more.</h4>
+            <h1>Blog Tweets</h1>
+          </div>
+          {/* <Image alt= 'bimg' className={styles.img} src='/heroimg.jpg' width={800} height={500} /> */}
+        </div>
+
+
+        <div className={styles.blogs}>
+          <h1>Latest Blogs</h1>
+          <div className={styles.grid}>
+
+
+
+            {images.map((image) => {
+              return (
+                <div className={`${styles.cards}`}>
+                  <Image alt='bimg' src={image} width={300} height={200} />
+                  <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+                </div>
+              )
+            })}
+
+
+
+            {/* <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/9.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/8.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/7.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/6.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/5.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/4.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/3.jfif' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/2.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div>
+            <div className={`${styles.cards}`}>
+              <Image alt='bimg' src='/blogimgs/1.jpg' width={300} height={200} />
+              <p>Lorem ipsum dolor sit amet consect etur adipisicing elit. </p>
+            </div> */}
           </div>
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
       </main>
     </>
   )

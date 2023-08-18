@@ -1,0 +1,232 @@
+.team{
+    /* margin: 0px 0px; */
+    width: 90vw;
+    /* height: auto; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    top: 50px;
+    /* bottom: -50px; */
+}
+
+
+.team .leftbar{
+    background-image: url(../public/bcg.jpg);
+    margin: 0 1%;
+    height: auto;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-right: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    padding: 20px;
+    /* color: black; */
+    backdrop-filter: blur(25px);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.team .leftbar .leftop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0 10px;
+    border-bottom: 1px solid white;
+}
+.team .leftbar .leftop .profile{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .leftbar .leftop .profile img{
+    border: 4px solid rgb(39, 178, 4);
+    border-radius: 999px;
+    margin: 0 5px;
+}
+.team .leftbar .leftop .profile span{
+    margin: 0 5px;
+}
+.team .leftbar .leftop .profile span span{
+    font-size: 12px;
+}
+
+
+
+.team .leftbar .leftmiddle{
+    display: flex;
+    flex-direction: column;
+}
+.team .leftbar .leftmiddle div{
+    display: flex;
+    justify-content:safe;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team .leftbar .leftmiddle div a{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+.team .leftbar .leftmiddle div a span{
+    font-size: 12px;
+    color: rgba(96, 154, 255, 0.884);
+}
+
+.team .leftbar .leftmiddle div img{
+    padding: 4px;
+    border: 3px solid rgba(131, 177, 255, 0.884);
+    border-radius: 999px;
+    height: 40px;
+    width: 40px;
+}
+
+.team .leftbar .leftbottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0px;
+    border-top: 1px solid white;
+}
+
+.team .leftbar .leftbottom .tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0 0px;
+}
+.team .leftbar .leftbottom .tags span{
+    padding: 4px;
+    background: rgb(51, 53, 53);
+    border-radius: 4px;
+    margin: 2px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+.team .leftbar .leftbottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0px;
+    border-top: 1px solid white;
+}
+
+
+
+
+
+
+.team .profiles{
+    margin: 0 2%;
+    height: auto;
+    width: 60%;
+    position: relative;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid white;
+    border-left: none;
+    border-right: none; */
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: rgba(147, 199, 195, 0);
+}
+
+.team .profiles nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffffd0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.team .profiles nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 999px;
+    /* padding: 2px; */
+    margin: 10px;
+}
+.team .profiles nav a img{
+    border-radius: 999px;
+}
+
+.team .profiles .pdetails{
+    /* border-radius: 999px; */
+}
+.team .profiles .pdetails .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: .2rem solid white;
+    /* border-radius: 999px; */
+    padding: 30px 0;
+}
+.team .profiles .pdetails .top div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow: hidden; */
+    align-items: center;
+    /* margin: 10px 0; */
+}
+.team .profiles .pdetails .top div img{
+    border-radius: 999px; 
+}
+.team .profiles .pdetails .top span{
+    /* border-radius: 999px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5px 0;
+}
+
+
+.team .rightbar{
+    margin: 0 1%;
+    height: auto;
+    width: 15%;
+    border: 2px solid white;
+    border-left: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    padding: 10px 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.team .rightbar .sociallinks{
+    display: flex;
+    flex-direction: column;
+}
+
+.team .rightbar .sociallinks a{
+    display: flex;
+    align-items: center;
+    text-decoration: none !important ;
+    font-size: 25px;
+    margin: 10px;
+}
+.team .rightbar .sociallinks a> span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0 20px;
+}

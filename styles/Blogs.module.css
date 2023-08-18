@@ -1,0 +1,133 @@
+.blogs {
+    margin: 80px auto;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.blogs .cardsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding: 50px 0 0;
+}
+
+.blogs .cardsection h1 {
+    display: flex;
+    position: relative;
+    left: -25%;
+    margin: 20px 0px 30px;
+}
+
+.slider {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+    padding: 0 5px;
+    scroll-behavior: smooth;
+}
+
+.slider .cards {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 5px;
+    scroll-behavior: smooth;
+}
+
+
+.slider .cards .card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #6e859544;
+    border: 1px solid;
+    transition: background 200ms, border 200ms;
+    overflow: hidden;
+    min-width: 325px;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .cards .card img {
+    border-radius: 10px;
+    border: 1px solid rgb(230, 255, 251);
+}
+
+.slider .cards .card p {
+    margin: 10px 0px;
+}
+
+
+.slider .prevbtn,
+.slider .nextbtn {
+    position: sticky;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+    background: #ffffff4a;
+    backdrop-filter: blur(25px);
+    color: white;
+    padding: 21px;
+    border: 1px solid white;
+    border-radius: 999px;
+    height: 30px;
+    width: 30px;
+    transition: 1s;
+}
+
+.slider .prevbtn:hover,
+.slider .nextbtn:hover {
+    background: #0000004a;
+    color: rgb(255, 255, 255);
+}
+
+/* .slider .prevbtn:focus,
+.slider .nextbtn:focus {
+    background: #ffffff4a;
+    color: white;
+}
+
+.slider .prevbtn p,
+.slider .nextbtn p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 800;
+} */
+
+.slider .prevbtn {
+    left: 10%;
+}
+
+.slider .nextbtn {
+    right: 10%;
+}
+
+
+/* .cards::-webkit-scrollbar {
+    height: 1px;
+}
+.cards::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 999px;
+}
+.cards::-webkit-scrollbar-track {
+    background-color: #000000;
+} */
+
+.cardsection::-webkit-scrollbar,
+.slider::-webkit-scrollbar,
+.cards::-webkit-scrollbar {
+    display: none;
+}

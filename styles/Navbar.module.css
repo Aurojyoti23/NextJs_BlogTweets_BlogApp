@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+.nav {
+  /* background-color: rgba(240, 248, 255, 0); */
+  background-color: #00ffb500;
+  background-image:
+    linear-gradient(to top right, #ffffff2a, #06f0ed1a);
+  padding: 2px 80px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border-radius: 10px; */
+  backdrop-filter: blur(25px);
+  /* border: 1.5px solid; */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.nav .brand h2 {
+  cursor: pointer;
+  font-family: 'Tilt Prism', cursive;
+  letter-spacing: 2px;
+  background: -webkit-linear-gradient(#ffffff, #0e7226);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  font-family: 'Tilt Prism', cursive;
+  letter-spacing: 1px;
+}
+
+.nav ul a {
+  font-size: 1.3rem;
+  margin: 0 28px;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul a li {
+  transition: all 1s;
+}
+
+.nav ul a li:hover {
+  color: rgb(173, 230, 211);
+}
+
+.nav ul .team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #d4e2e3;
+  border-radius: 999px;
+  overflow: hidden;
+  height: 45px;
+  width: 45px;
+  background: radial-gradient(at top left,
+      #ffffff, #000000)
+}
+
+.nav .team .tmimg {
+  border-radius: 999px;
+  height: 45px;
+  width: 45px;
+}
